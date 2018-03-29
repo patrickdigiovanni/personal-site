@@ -29,17 +29,17 @@ export class ArticleComponent implements OnInit {
   
     },
     {
-      "title": "Photography",
-      "category": "photography",
+      "title": "Design",
+      "category": "Design",
       "description": "",
-      "image": "../../assets/img/photos/thumbs/6.jpg"
+      "image": "../../assets/img/design/thumbs/6.jpg"
   
     },
     {
-      "title": "Photography",
-      "category": "photography",
+      "title": "Procedural Forms",
+      "category": "3D",
       "description": "",
-      "image": "../../assets/img/photos/thumbs/6.jpg"
+      "image": "../../assets/img/procedural-forms/thumbs/6.jpg"
   
     }
     

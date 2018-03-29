@@ -17,6 +17,7 @@ body {
 h1 {
     font-size: 1.5rem;
     margin-bottom: .5rem;
+    padding-right: 20px;
 }
 
 h2 {
@@ -25,79 +26,16 @@ h2 {
 
 header {
     position: relative;
+    color: $navText;
+    align-self: right;
 }
 
 main {
     padding: 2rem;
+    background: rgb(78, 78, 78) ;
 }
 
-
-/************** NAVIGATION ***************/
-
-@media only screen and (min-width: 600px) {
-    // * nav styles */
-   
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        background: $navBg;
-    }
-    nav a {
-        color: $navText;
-        text-decoration: none;
-    }
-    nav a:hover {
-        text-decoration: none;
-    }
-    /* grid */
-    .container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    /* specific item styles */
-    .container header,
-    .container nav,
-    .container footer {
-        grid-column: span 4;
-    }
-    .container section {
-        grid-column: span 3;
-    }
-    /* nav styles */
-    nav ul li {
-        display: inline-block;
-        padding: 0 20px 0 0;
-    }
-    /* hide toggle */
-    .toggle {
-        display: none;
-    }
-}
-
-
-/* media query for nav styles */
-
-@media only screen and (max-width: 599px) {
-    #nav {
-        transition: transform .3s ease-in-out;
-        top: 0;
-        bottom: 0;
-        position: fixed;
-        width: 300px;
-        left: -340px;
-    }
-    #nav:target {
-        transform: translateX(340px);
-    }
-    .close {
-        text-align: right;
-        display: block;
-        text-decoration: none;
-        font-size: 3em;
-        position: relative;
-        top: -30px;
-    }
-    .open {
-        text-align: left;
-    }
+.icons {
+  position: absolute;
+  right: 20px;
 }
