@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 22px;
     margin-bottom: .5rem;
     padding-right: 20px;
 }
@@ -28,6 +28,20 @@ header {
     position: relative;
     color: $navText;
     align-self: right;
+    a {
+      text-decoration: none;
+      color: $navText;
+      &:hover {
+        color: darken($color: $navText, $amount: 10)
+      }
+    }
+    p {
+    
+      font-size: .5em;
+      font-family:$raleway;
+     padding-left:40px;
+    }
+    
 }
 
 main {
@@ -38,4 +52,9 @@ main {
 .icons {
   position: absolute;
   right: 20px;
+  font-size: 30px;
+  i{
+      padding: 20px;
+  }
 }
+

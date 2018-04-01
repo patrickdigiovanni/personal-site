@@ -41,6 +41,13 @@ export class ArticleComponent implements OnInit {
       "description": "",
       "image": "../../assets/img/procedural-forms/thumbs/6.jpg"
   
+    },
+    {
+      "title": "Oscillation Painter",
+      "category": "Code",
+      "description": "",
+      "image": "../../assets/img/osc-painter/thumbs/5.jpg"
+  
     }
     
   ];
