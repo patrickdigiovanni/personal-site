@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import perfundo from 'perfundo'
 import * as  _ from "lodash";
-import { NgxGalleryImage, NgxGalleryOptions } from 'ngx-gallery';
+import { NgxGalleryImage, NgxGalleryOptions, NgxGalleryImageSize } from 'ngx-gallery';
 
 
 @Component({
@@ -10,48 +10,57 @@ import { NgxGalleryImage, NgxGalleryOptions } from 'ngx-gallery';
   styleUrls: ['./gallery.component.scss']
 })
 
- 
+
 
 export class GalleryComponent implements OnInit {
-  numImages = _.range(1, 10);
-  galleryImages : NgxGalleryImage[];
-  galleryOptions : NgxGalleryOptions[];
-  
+ 
+  @Input('qty') qty : number;
 
+  galleryImages: NgxGalleryImage[];
+  galleryOptions: NgxGalleryOptions[];
+
+  @Input('gallery-name') galleryName : string;
   constructor() {
-    let tempArray= [];
-    for (let i of this.numImages) {
-      let bigUrl = "../../assets/img/osc-painter/full/" + i + ".jpg";
-      let thumbUrl = "../../assets/img/osc-painter/thumbs/" + i + ".jpg";
-      
     
     
-      
-      tempArray.push({
-       
-       small : thumbUrl,
-       medium : bigUrl,
-       big : bigUrl
-      
-        
-      });
-    }
-    this.galleryImages = tempArray;
-    
+
   }
 
   ngOnInit() {
     console.log(this.galleryImages);
+    let numImages = _.range(1, (this.qty + 1));
+    let tempArray = [];
+    for (let i of numImages) {
+      let bigUrl = "../../assets/img/"+ this.galleryName + "/full/" + i + ".jpg";
+      let thumbUrl = "../../assets/img/"+ this.galleryName + "/thumbs/" + i + ".jpg";
 
+
+
+
+      tempArray.push({
+
+        small: thumbUrl,
+        medium: bigUrl,
+        big: bigUrl
+
+
+      });
+    }
+    this.galleryImages = tempArray;
     this.galleryOptions = [
       {
-        width: '400px',
-        height: '400px',
-        thumbnailsColumns: 4
+        width: '100%',
+        height: '500px',
+        thumbnailsColumns: 5,
+        imageSize: NgxGalleryImageSize.Contain,
+        thumbnailSize: NgxGalleryImageSize.Contain,
+        imageSwipe: true,
+        thumbnailsSwipe: true,
+        previewKeyboardNavigation : true
       }
     ];
 
-   
-   
+
+
   }
 }
