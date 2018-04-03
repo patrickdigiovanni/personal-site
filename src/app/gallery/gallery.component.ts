@@ -4,6 +4,7 @@ import * as  _ from "lodash";
 import { NgxGalleryImage, NgxGalleryOptions, NgxGalleryImageSize } from 'ngx-gallery';
 
 
+
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
@@ -19,22 +20,31 @@ export class GalleryComponent implements OnInit {
   galleryImages: NgxGalleryImage[];
   galleryOptions: NgxGalleryOptions[];
 
-  @Input('gallery-name') galleryName : string;
+  @Input('gallery-folder') galleryFolder : string;
+  @Input('gallery-name') galleryName: string;
+  description : string;
+  galleryPath : string = "../../assets/img/"+ this.galleryFolder ;
+  descriptionPath:string = this.galleryPath + "/description.txt";
+ 
+
+ 
   constructor() {
     
     
+  
 
   }
 
   ngOnInit() {
-    console.log(this.galleryImages);
+    
+    
     let numImages = _.range(1, (this.qty + 1));
     let tempArray = [];
     for (let i of numImages) {
-      let bigUrl = "../../assets/img/"+ this.galleryName + "/full/" + i + ".jpg";
-      let thumbUrl = "../../assets/img/"+ this.galleryName + "/thumbs/" + i + ".jpg";
+      let bigUrl = "../../assets/img/"+ this.galleryFolder + "/full/" + i + ".jpg";
+      let thumbUrl = "../../assets/img/"+ this.galleryFolder + "/thumbs/" + i + ".jpg";
 
-
+     
 
 
       tempArray.push({

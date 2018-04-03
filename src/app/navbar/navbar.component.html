@@ -1,7 +1,19 @@
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+    <div class="dropdown">
+        <button class="dropbtn"> <a routerLink="/art" routerLinkActive="active-link">Art</a>
+          <i class="fas fa-caret-down caret"></i>
+        </button>
+        <div class="dropdown-content">
+            
+            <a routerLink="/photos" routerLinkActive="active-link">Photos</a>
+            <a routerLink="/particles" routerLinkActive="active-link" >Particle Systems</a>
+            <a routerLink="/procedural" routerLinkActive="active-link">Procedural Forms</a>
+            <a routerLink="/random-eyes" routerLinkActive="active-link">Random Eyes</a>
+            <a routerLink="/osc-paint-output" routerLinkActive="active-link">Oscillation Painter</a>
+            <a routerLink="/design" routerLinkActive="active-link">Design</a>
+        </div>
+      </div> 
+    
+  
   <a href="javascript:void(0);" class="icon" onclick="toggleNav()"><i class="fas fa-bars"></i></a>
 </div>

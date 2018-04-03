@@ -1,0 +1,51 @@
+@import "../../styles.scss";
+.gallery {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+section {
+   
+    border-radius: 3px;
+    background-color: steelblue;
+    max-width: 400px;
+    margin: auto;
+    padding:10px;
+    flex-grow:1;
+    overflow: hidden;
+    align-content: center;
+    position: relative;
+    justify-content: space-evenly;
+    a {
+        text-decoration: none;
+    }
+  }
+  
+  .section-img {
+   height:200px;
+   width: 100%;
+    
+    margin: 0 auto;
+    object-fit: cover
+  }
+  
+  .bigtitle {
+    background-color: rgba(245, 222, 179, 0.479);
+      position: absolute;
+    padding: 10px;
+    bottom:0;
+    right:0;
+  }
+  
+  .bigtitle-title {
+    color: rgb(26, 25, 25);
+    
+    margin-bottom: 10px;
+
+  }
+@media (min-width : 1080px) {
+  section {
+    max-width: 800px;
+  }
+}

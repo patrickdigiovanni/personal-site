@@ -3,4 +3,22 @@ ngx-gallery {
     background-color: $bodyBg;
     height : 100%;
     padding-top: 20px;
+
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: repeat(auto-fill, 300px);
+    grid-gap: 30px;
+  
+    align-content: center;
+  }
+  
+  
+h1 {
+    color : $bodyText;
+    text-align: center;
+    padding-top : 20px;
+    padding-bottom: 10px;
+    font-size: 36px;
 }

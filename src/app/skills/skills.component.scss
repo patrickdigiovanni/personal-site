@@ -1,0 +1,12 @@
+@import "../../styles.scss";
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-auto-rows: 100px;
+    background-color: #fff;
+    width: 100%;
+    align-items: center;
+
+    
+
+}

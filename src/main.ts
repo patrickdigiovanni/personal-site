@@ -18,4 +18,3 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
 
 
-// Initialize a perfundo Lightbox.
