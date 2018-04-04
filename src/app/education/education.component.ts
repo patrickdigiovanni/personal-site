@@ -9,8 +9,8 @@ export class EducationComponent implements OnInit {
   education =  [
     {
       "institution": "SUNY Empire State College",
-      "area": "Computer Science",
-      "studyType": "Bachelor of Science - BS",
+      "area": "Computer Science (BS)",
+      "studyType": "",
       "startDate": "2014",
       "gpa": "",
       "courses": [],

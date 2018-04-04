@@ -1,13 +1,49 @@
 @import "../../styles.scss";
-
+.education-header{
+    font-size: 25px;
+    color:$navText;
+    padding: 10px;
+    font-family: $plexMono;
+    
+}
 .education-container{
     color:$bodyText;
     display: grid;
     grid-template-columns : repeat(3, 1fr);
+   
+    font-family: $plexMono;
+    
+   
+    
+    text-align: center;
+    .school-container {
+        display: grid;
+        border-left: 2px solid ;
+    border-right: 2px solid;
+    
+    
+    
+   
+    }
     .school-name{
+        
         font-size: 20px;
         background: lighten($color: $bodyBg, $amount: 20);
         color : $navText;
         padding: 10px;
+        
     }
-}
+    .school-dates {
+        display: block;
+        
+        background-color: #fff;
+     padding : 10px 0 10px 0;
+     bottom: 0;
+    }
+    .school-area{
+        
+        padding: 10px;
+        vertical-align: center;
+        
+    }
+    }

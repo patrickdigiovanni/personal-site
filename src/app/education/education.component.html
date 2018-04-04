@@ -1,10 +1,12 @@
 
-
+<h1 class="education-header">Education</h1>
 <div class="education-container">
-  <div *ngFor="let school of education ; let i = index" class=".column-{{i + 1}}">
+  
+  <div *ngFor="let school of education ; let i = index" class=".column-{{i + 1}} school-container">
     <h1 class="school-name">{{school.institution}}</h1>
+   <div class="school-area"> 
+    <h2 *ngIf="school.studyType"> {{school.studyType}}</h2><h2>{{school.area}}</h2>
+    </div>
     <h2 class="school-dates">{{school.startDate}} to {{school.endDate}}</h2>
-    <h2 class="school-study">{{school.studyType}}</h2>
-    <h2 class="school-area">{{school.area}}</h2>
   </div>
 </div>
