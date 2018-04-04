@@ -1,0 +1,398 @@
+{
+  "name": "Patrick DiGiovanni - Multimedia  Technology Professional",
+  "info": {
+    "label": "INTELLIGENT - Always willing and able to learn new skills and techniques, as well as new ways of looking at things.  Eagerly takes advantage of any and all available training opportunities that will help improve quality of work. TECHNICALLY PROFICIENT - Strong understanding of coding principles, concepts, and best practice conventions in several programming languages. Highly proficient in the use of most software, and the use and installation of Windows and Linux/UNIX based operating systems.  CREATIVE - Talented in a variety of artistic fields, including photography, video, music, and 2D/3D computer graphics/animation.  Maintains an art page with 950+ organic followers and has produced dozens of electronic music compositions, attracting a very small but devoted fan base. COLLABORATIVE - Works well on a team, promoting cooperation over competition.  Extensively trained and certified in non-violent conflict resolution. Diversified Skill Set - Technical, artistic, insightful, and intuitive.  Native in English, fluent in Spanish.",
+    "image": "",
+    "brief": "Computer Software"
+  },
+  "contact": {
+    "email": "patrickdigiovanni77@gmail.com",
+    "phone": "",
+    "website": ""
+  },
+  "meta": {
+    "format": "FRESH@^1.0.0-beta",
+    "modified": "2018-04-03T22:58:05.500Z"
+  },
+  "location": {
+    "city": "",
+    "region": "",
+    "country": "",
+    "code": "United States",
+    "address": ""
+  },
+  "employment": {
+    "history": [
+      {
+        "position": "Digital Literacy Navigator",
+        "employer": "Literacy Volunteers of Rochester, Inc.",
+        "summary": "Assist individuals in libraries and other community centers with computer-related tasks.   Common scenarios include: creating resumes; submitting online job applcations; creating and using email and other online services; using digital media as a tool for research and education.  Help to empower customers in areas of concentrated poverty by teaching them core digital literacy skills.",
+        "start": "2016-03-01",
+        "end": "2017-12-01",
+        "url": "",
+        "keywords": [],
+        "highlights": []
+      },
+      {
+        "position": "Shelter Worker",
+        "employer": "Amigos De Los Animales",
+        "summary": "Assisted in the maintenance and care of a shelter housing 65-100 rescued street dogs.",
+        "start": "2014-01-01",
+        "end": "2014-12-01",
+        "url": "",
+        "keywords": [],
+        "highlights": []
+      },
+      {
+        "position": "Graphic Artist / Photographer",
+        "employer": "Deepfelt Visions",
+        "summary": "",
+        "current": true,
+        "start": "2010-01-01",
+        "url": "",
+        "keywords": [],
+        "highlights": []
+      },
+      {
+        "position": "Farm Assistant",
+        "employer": "Mystic Morning Farm",
+        "summary": "Plant, harvest and water vegetable crops, and prepare them for sale in local markets. Staff proprietary farm stand and booths at various farmers’ markets.",
+        "start": "2010-01-01",
+        "end": "2012-01-01",
+        "url": "",
+        "keywords": [],
+        "highlights": []
+      },
+      {
+        "position": "Production Coordinator",
+        "employer": "FedEx Office",
+        "summary": "Interact directly with customers to create, track, and tender orders through computerized POS system, and perform end-of-day closing procedures. Plan and execute all production related tasks, including scanning, printing, folding, punching, collating, and stapling of documents. Prepare documents for printing in various formats. Calibrate and maintain machines for proper color and quality of output. Print and finish large-format signs, banners, etc.  Gained hundreds of hours of valuable training in hardware, software and customer service. Helped store earn a \"Purple Promise\" award for providing an outstanding customer experience.",
+        "start": "2006-11-01",
+        "end": "2010-09-01",
+        "url": "",
+        "keywords": [],
+        "highlights": []
+      },
+      {
+        "position": "Grill Cook /  Cashier",
+        "employer": "Ahli Baba's Kabob Shop",
+        "summary": "Prepare and serve short order Mediterranean cuisine. Maintain a clean kitchen and dining area. Operate cash register and perform end-of-day closing procedures.",
+        "start": "2003-05-01",
+        "end": "2012-09-01",
+        "url": "",
+        "keywords": [],
+        "highlights": []
+      },
+      {
+        "position": "Older School-Age Coordinator",
+        "employer": "Greater Burlington YMCA",
+        "summary": "Develop  and facilitate after school curriculum for children grades 4-6 Transport children to/from YMCA Supervise Assistant Counselors Participate in cross-site coordinator meetings Coordinate inter-mural activities with other YMCA programs  Write newsletter to parents/act as liaison between parents and program director. Plan field trips, games, art projects, and other diversions. Design and supervise community service projects and fundraising activities",
+        "start": "1998-01-01",
+        "end": "2002-01-01",
+        "url": "",
+        "keywords": [],
+        "highlights": []
+      }
+    ]
+  },
+  "education": {
+    "level": "",
+    "history": [
+      {
+        "institution": "State University of New York Empire State College",
+        "start": "2014-12-31",
+        "end": "2017-12-31",
+        "grade": "",
+        "curriculum": [],
+        "summary": "",
+        "area": "",
+        "studyType": "Bachelor of Science - BS"
+      },
+      {
+        "institution": "Monroe Community College",
+        "start": "2004-12-31",
+        "end": "2005-12-31",
+        "grade": "",
+        "curriculum": [],
+        "summary": "",
+        "area": "",
+        "studyType": ""
+      },
+      {
+        "institution": "Community College of Vermont",
+        "start": "1997-12-31",
+        "end": "1999-12-31",
+        "grade": "",
+        "curriculum": [],
+        "summary": "",
+        "area": "",
+        "studyType": ""
+      }
+    ]
+  },
+  "skills": {
+    "sets": [
+      {
+        "name": "Art",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "PHP",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "C++",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "JavaScript",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "CoffeeScript",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Ruby",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Photography",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Graphics",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Computer Architecture",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Photoshop",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Illustrator",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Web Design",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "InDesign",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Troubleshooting",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Creative Direction",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Social Networking",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Microsoft Office",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Problem Solving",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Visual Studio",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Visual Basic",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "C#",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Technical Support",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Digital Printing",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Collating",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Programming",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Photocopier",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Scanners",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Working With Children",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Music Production",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Music",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Music Theory",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Rhythm Guitar",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Hand Percussion",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Keyboards",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Computer Animation",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Cooking",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Cookies",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "3D Graphics",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Blender",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Java",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "OpenFrameworks",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Software Installation",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Hardware Installation",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Computer Hardware",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Digital Cameras",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Video Editing",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Graphics Layout",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Adobe Acrobat",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "Data Entry",
+        "level": "",
+        "skills": []
+      },
+      {
+        "name": "R",
+        "level": "",
+        "skills": []
+      }
+    ]
+  },
+  "social": [],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native or bilingual proficiency"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Full professional proficiency"
+    }
+  ]
+}

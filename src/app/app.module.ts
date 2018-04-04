@@ -23,6 +23,7 @@ import { OpOutputComponent } from './op-output/op-output.component';
 import { DesignComponent } from './design/design.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ResumeComponent } from './resume/resume.component';
+import { EducationComponent } from './education/education.component';
 
 
 
@@ -42,7 +43,9 @@ import { ResumeComponent } from './resume/resume.component';
     OpOutputComponent,
     DesignComponent,
     SkillsComponent,
-    ResumeComponent
+    ResumeComponent,
+    EducationComponent,
+    
   ],
   imports: [
     BrowserModule,

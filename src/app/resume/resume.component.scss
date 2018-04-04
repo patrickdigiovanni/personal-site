@@ -1,0 +1,62 @@
+@import "../../styles.scss";
+
+.resume-container {
+   margin: 0 20px 0 20px;
+  color : $navText;
+  padding : 0 15px 0 15px;
+  
+     
+  a{
+      text-decoration: none;
+  }
+  .resume-header {
+    color: complement($color: $navText);
+    
+  }
+
+  .company-name{
+     padding: 5px 0 0 0;
+     
+      
+  }
+  .job-dates {
+
+  }
+  .job-position {
+      color: complement($color: $navText);
+      background-color: lighten($bodyBg, 10);
+      display: inline-block;
+      padding: 10px;
+  }
+  .job-container {
+      
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-auto-flow: column;
+    
+  }
+  .job-description {
+      font-family: $plexMono;
+      display:block;
+        position: relative;
+      background: complement($navBg);
+      padding : 10px;
+      color: lighten($color: $navText, $amount: 20);
+      line-height: 25px;
+      size : 25px;
+      bottom:0px;
+      height:100%;
+      margin: 10px;
+      border: 2px solid black;
+      
+  }
+  .left {
+      grid-column: 1;
+
+  }
+  .right {
+      grid-column: 2;
+      height : 100%;
+  }
+
+}

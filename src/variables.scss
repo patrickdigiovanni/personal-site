@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway'); 
-
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
 $leadingOverlay: linear-gradient(
     rgba(66, 66, 66, 0.45), 
     rgba(26, 26, 26, 0.45)
@@ -18,3 +18,4 @@ $navBg: rgb(53, 53, 53);
 $bodyBg : rgb(27, 27, 27);
 $bodyText : grey;
 $headerBg : grey;
+$plexMono : 'IBM Plex Mono', monospace;

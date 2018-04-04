@@ -1,0 +1,13 @@
+@import "../../styles.scss";
+
+.education-container{
+    color:$bodyText;
+    display: grid;
+    grid-template-columns : repeat(3, 1fr);
+    .school-name{
+        font-size: 20px;
+        background: lighten($color: $bodyBg, $amount: 20);
+        color : $navText;
+        padding: 10px;
+    }
+}
