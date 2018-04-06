@@ -2,10 +2,10 @@
 .wrapper {
     display: flex;
     color : $bodyText;
-    width: 100%;
+    width: 100vw;
     flex-flow: row wrap;
-    .left-col{
-        width: 250px;
+    .skills-container{
+        width: 50vw;
         align-content: center;
     }
    h1{
@@ -29,7 +29,10 @@
 
     
     @media screen and (max-width : 800px ) {
-               
+               .skills-container{
+                   width: 100vw;
+                   padding : 20px;
+               }
     }
 
 

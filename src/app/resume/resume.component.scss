@@ -8,8 +8,13 @@
      
   a{
       text-decoration: none;
-     
-     
+     background-color: lighten($bodyBg, 20);
+     padding: 5px;
+     margin:5px;
+     color: $navText;
+     &:hover{
+         color : darken($color: $navText, $amount: 10);
+     }
   }
   .resume-header {
    
@@ -36,6 +41,7 @@
       display: inline-block;
       padding: 10px;
       border-radius: 10px;
+      background-color: lighten($headerBg, 5);
   }
   .job-container {
       

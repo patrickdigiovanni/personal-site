@@ -81,8 +81,9 @@ header {
   font-family: $playfair-display;
 }
 
-.logo {
-  height: 50px;
-  margin-right: 20px;
-}
 
+
+#app-header{
+  position: sticky;
+  top :0px;
+}

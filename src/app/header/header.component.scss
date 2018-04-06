@@ -1,9 +1,6 @@
 @import "../app.component.scss";
-
 /***************** FONTS ********************/
 
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
 html {
     font-size: 62.5%;
     font-family: 'Open Sans', sans-serif;
@@ -29,32 +26,42 @@ header {
     color: $navText;
     align-self: right;
     a {
-      text-decoration: none;
-      color: $navText;
-      &:hover {
-        color: darken($color: $navText, $amount: 10)
-      }
+        text-decoration: none;
+        color: $navText;
+        &:hover {
+            color: darken($color: $navText, $amount: 10)
+        }
     }
     p {
-    
-      font-size: .5em;
-      font-family:$raleway;
-     padding-left:40px;
+        font-size: .5em;
+        font-family: $raleway;
+        padding-left: 40px;
     }
-    
 }
 
 main {
     padding: 2rem;
-    background: rgb(78, 78, 78) ;
+    background: rgb(78, 78, 78);
 }
 
 .icons {
-  position: absolute;
-  right: 20px;
-  font-size: 30px;
-  i{
-      padding: 20px;
-  }
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    i {
+        padding: 20px;
+    }
 }
 
+#initials {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 480px) {
+    #full-name {
+        display:none;
+    }
+    #initials {
+        visibility: visible;
+    }
+}
