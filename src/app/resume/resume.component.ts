@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import { EducationComponent } from "../education/education.component";
+import * as $ from 'jquery/dist/jquery';
 
 
 @Component({
@@ -405,8 +406,8 @@ constructor() { }
   }
   
   ngAfterViewChecked() {
-   console.log(this.work);
-   $(".resume-container").html($(".resume-container").html().replace(/(?:\n\r|\r\n|\r|\n)/g, "<br /><br/>"));
+  //  console.log(this.work);
+  //  $(".resume-container").html($(".resume-container").html().replace(/(?:\n\r|\r\n|\r|\n)/g, "<br/>"));
   }
 
 }

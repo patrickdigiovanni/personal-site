@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import perfundo from 'perfundo'
+
 import * as  _ from "lodash";
 import { NgxGalleryImage, NgxGalleryOptions, NgxGalleryImageSize } from 'ngx-gallery';
-
+import { ArtComponent } from "../art/art.component";
 
 
 @Component({
@@ -16,20 +16,20 @@ import { NgxGalleryImage, NgxGalleryOptions, NgxGalleryImageSize } from 'ngx-gal
 export class GalleryComponent implements OnInit {
  
   @Input('qty') qty : number;
-
+  
   galleryImages: NgxGalleryImage[];
   galleryOptions: NgxGalleryOptions[];
-
+ 
   @Input('gallery-folder') galleryFolder : string;
   @Input('gallery-name') galleryName: string;
-  description : string;
+  
+  @Input('description')description : string;
   galleryPath : string = "../../assets/img/"+ this.galleryFolder ;
-  descriptionPath:string = this.galleryPath + "/description.txt";
- 
+
+  
 
  
   constructor() {
-    
     
   
 

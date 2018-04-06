@@ -1,7 +1,7 @@
 <div class="item-wrapper">
 <div class="gallery">
-  <section *ngFor="let page of this.pages">
-    
+  <section *ngFor="let page of this.pages['2d']">
+
       <a routerLink="{{page.route}}">
         <img class="section-img" src="{{page.image}}" alt=" " />
         <div class="bigtitle">
@@ -11,6 +11,20 @@
         </div>
       </a>
     
+      
+  </section>
+  <section *ngFor="let page of this.pages['3d']">
+
+      <a routerLink="{{page.route}}">
+        <img class="section-img" src="{{page.image}}" alt=" " />
+        <div class="bigtitle">
+          <h1 class="bigtitle-title">
+            {{page.title}}
+          </h1>
+        </div>
+      </a>
+    
+      
   </section>
 </div>
 </div>

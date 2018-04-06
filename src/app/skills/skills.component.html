@@ -1,4 +1,11 @@
 <div class="wrapper">
-  <p class="left-col">ok</p>
-  <p class="right-col">ok</p>
+  <div *ngFor="let item of skillsList" class="left-col">
+
+    <h1 >{{item.skillset}}</h1>
+  
+
+  <ul *ngFor="let skill of item.skills ">
+    <li>{{skill}}</li>
+  </ul>
+  </div>
 </div>

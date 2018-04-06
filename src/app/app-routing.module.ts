@@ -8,7 +8,9 @@ import { RandomEyesComponent } from './random-eyes/random-eyes.component';
 import { ArtComponent } from './art/art.component';
 import { OpOutputComponent } from './op-output/op-output.component';
 import { DesignComponent } from './design/design.component';
-
+import { ResumeComponent } from "./resume/resume.component";
+import { EducationComponent } from "./education/education.component";
+import { SkillsComponent } from "./skills/skills.component";
 const routes: Routes = [
   { path: 'photos',
 component: PhotosComponent},
@@ -23,8 +25,13 @@ component: ArtComponent},
 {path : 'osc-paint-output',
 component: OpOutputComponent},
 {path : 'design',
-component: DesignComponent}
- 
+component: DesignComponent},
+{path: 'education',
+component: EducationComponent },
+{path :'experience',
+component : ResumeComponent},
+{path :'skills',
+component : SkillsComponent}
 ];
 
 @NgModule({

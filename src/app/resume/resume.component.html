@@ -1,11 +1,11 @@
 <div class="resume-container">
     <h1 class="resume-header">Professional Experience</h1>
-    <div class="job-container" *ngFor="let job of work">
+    <div class="job-container container-fluid" *ngFor="let job of work">
         <div class="left">
             <h3 class="company-name">
                 <a href="{{job.website}}" target="_blank">{{job.company}}</a>
             </h3>
-            <span class="job-dates">({{job.startDate}} to {{job.endDate}})</span>
+            <p class="job-dates">{{job.startDate}}<br/>to<br/>{{job.endDate}}</p>
 
             <p class="job-position">{{job.position}} </p>
         </div>
@@ -13,7 +13,7 @@
             <p class="job-description">{{job.summary}} </p>
         </div>
     </div>
-
+  
 
 
 </div>

@@ -8,7 +8,7 @@
 section {
    
     border-radius: 3px;
-    background-color: steelblue;
+   
     max-width: 400px;
     margin: auto;
     padding:10px;
@@ -19,19 +19,25 @@ section {
     justify-content: space-evenly;
     a {
         text-decoration: none;
+         
+        
     }
   }
   
   .section-img {
    height:200px;
    width: 100%;
-    
+    opacity:.7;
     margin: 0 auto;
-    object-fit: cover
+    object-fit: cover;
+    border-radius: 15px 0 ;
+    
+    
+    
   }
   
   .bigtitle {
-    background-color: rgba(245, 222, 179, 0.479);
+    background-color: $navBg;
       position: absolute;
     padding: 10px;
     bottom:0;
@@ -39,8 +45,8 @@ section {
   }
   
   .bigtitle-title {
-    color: rgb(26, 25, 25);
-    
+    color: $kelly;
+    font-size: 20px;
     margin-bottom: 10px;
 
   }

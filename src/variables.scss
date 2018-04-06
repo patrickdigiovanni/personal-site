@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway'); 
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import "node_modules/sass-colorscheme/colorscheme";
+$seed-color : hsl(0, 0%, 31%);
+$colorscheme: colorscheme($seed: $seed-color, $global: true, $scheme: 'analogic');
+
 $leadingOverlay: linear-gradient(
     rgba(66, 66, 66, 0.45), 
     rgba(26, 26, 26, 0.45)
@@ -8,14 +12,27 @@ $leadingImage: 'assets/img/particle-systems/full/3.jpg';
 $raleway: 'Raleway', serif;
 $playfair-display: 'Playfair Display', sans-serif; 
 
-$darkgrey: #34495e;
-$red: #e74c3c;
-$yellow: #C9C243;
-$orange: #FFA644;
-$navText: #4e9ecf;
-$titleText : white;
-$navBg: rgb(53, 53, 53);
-$bodyBg : rgb(27, 27, 27);
-$bodyText : grey;
-$headerBg : grey;
+
+// Color pallette - Purple/Green
+$black1 : #000000;
+$lavender : #7b53ce;
+$violet : #604ad0;
+$kelly : #029334;
+$hunter : #236154;
+$royal : #0b06c5;
+
+
+// Color pallette - warm
+// $red: #e74c3c;
+// $yellow: #C9C243;
+// $orange: #FFA644;
+
+$navText: lighten($primary--lightest,10);
+$titleText : $primary--lightest;
+$navBg: $secondary-a--darkest ;
+$bodyBg : darken($primary--darkest, 10);
+$bodyText : $primary--lightest;
+$headerBg : lighten($black1, 10);
 $plexMono : 'IBM Plex Mono', monospace;
+$btnText :  #baf73c;
+$btnBg : darken($kelly, 10);
