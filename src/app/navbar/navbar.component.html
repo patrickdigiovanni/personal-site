@@ -1,9 +1,9 @@
-<div class="topnav responsive" id="myTopnav">
+<!-- <div class="topnav responsive" id="myTopnav">
     
     <div class="dropdown">
 
         <button class="dropbtn">
-            <a routerLink="/art" routerLinkActive="active-link">Art</a>
+            Art
             <i class="fas fa-caret-down caret"></i>
         </button>
         <div class="dropdown-content">
@@ -18,7 +18,7 @@
     </div>
     <div class="dropdown">
         <button class="dropbtn">
-            <a routerLink="/art" routerLinkActive="active-link">Resume</a>
+            Resume
             <i class="fas fa-caret-down caret"></i>
         </button>
         <div class="dropdown-content">
@@ -32,7 +32,61 @@
     </div>
 
 
-    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+    <a routerLink="javascript:void(0);" class="icon" onclick="toggleNav()">
         <i class="fas fa-bars"></i>
     </a>
+</div> -->
+<div class="nav-container">
+    <!-- <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+                    [attr.aria-expanded]="!isCollapsed" aria-controls="collapse1">
+              <i class="fas fa-bars"></i>
+            </button>
+    
+    
+       
+            
+          
+        
+      </div> -->
+    <nav class="navbar" id="top-nav">
+        
+            <button  class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"  data-target="#collapsingNavbar4" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+       
+        
+        <div class="navbar-collapse collapse" id="collapsingNavbar4">
+
+            <div ngbDropdown class="d-inline-block">
+                <button ngbDropdownToggle type="button" class="btn  dropdown-toggle ">
+                    Portfolio
+                    <span class="caret"></span>
+                </button>
+                <div ngbDropdownMenu class="dropdown-menu" role="menu">
+                    <button class="dropdown-item" routerLink="/photos" routerLinkActive="active-link">Photos</button>
+                    <button class="dropdown-item" routerLink="/particles" routerLinkActive="active-link">Particle Systems</button>
+                    <button class="dropdown-item" routerLink="/procedural" routerLinkActive="active-link">Procedural Forms</button>
+                    <button class="dropdown-item" routerLink="/random-eyes" routerLinkActive="active-link">Random Eyes</button>
+                    <button class="dropdown-item" routerLink="/osc-paint-output" routerLinkActive="active-link">Oscillation Painter</button>
+                    <button class="dropdown-item" routerLink="/design" routerLinkActive="active-link">Design</button>
+
+
+                </div>
+                <div ngbDropdown class="d-inline-block">
+
+                    <button ngbDropdownToggle type="button" class="btn  ">
+                        About
+                        <span class="caret"></span>
+                    </button>
+                    <div ngbDropdownMenu class="dropdown-menu" role="menu">
+                        <button class="dropdown-item" routerLink="/experience">Experience</button>
+                        <button class="dropdown-item" routerLink="/education">Education</button>
+                        <button class="dropdown-item" routerLink="/skills">Skills</button>
+
+                    </div>
+                </div>
+                <a class="nav-item " routerLink="/contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 </div>

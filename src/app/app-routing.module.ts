@@ -11,8 +11,13 @@ import { DesignComponent } from './design/design.component';
 import { ResumeComponent } from "./resume/resume.component";
 import { EducationComponent } from "./education/education.component";
 import { SkillsComponent } from "./skills/skills.component";
+import { ContactComponent } from "./contact/contact.component";
+import { CodeComponent } from "./code/code.component";
+import { HomeComponent } from "./home/home.component";
 const routes: Routes = [
-  { path: 'photos',
+  { path : '',
+  component: HomeComponent
+},{path: 'photos',
 component: PhotosComponent},
 { path: 'particles',
 component: ParticlesComponent},
@@ -20,7 +25,7 @@ component: ParticlesComponent},
 component: ProceduralComponent},
 { path : 'random-eyes',
 component: RandomEyesComponent},
-{path : 'art',
+{path : 'menu',
 component: ArtComponent},
 {path : 'osc-paint-output',
 component: OpOutputComponent},
@@ -31,7 +36,11 @@ component: EducationComponent },
 {path :'experience',
 component : ResumeComponent},
 {path :'skills',
-component : SkillsComponent}
+component : SkillsComponent},
+{path: 'contact',
+component: ContactComponent},
+{path: 'code',
+component: CodeComponent}
 ];
 
 @NgModule({

@@ -3,7 +3,7 @@
     font-size: 25px;
     color:$navText;
     padding: 10px;
-    font-family: $plexMono;
+    font-family: $primaryFont;
     
 }
 .education-container{
@@ -11,34 +11,38 @@
     display: grid;
     grid-template-columns : repeat(3, 1fr);
    
-    font-family: $plexMono;
+    font-family: $primaryFont;
     
-   
+    justify-content: stretch;
     
     text-align: center;
     .school-container {
         
         border-left: 2px solid ;
     border-right: 2px solid;
-    
+   
     
     
    
     }
     .school-name{
-        
-        font-size: 20px;
+        display: flex;
+        font-size: 23px;
         background: lighten($color: $bodyBg, $amount: 20);
         color : $navText;
         padding: 10px;
+        height: 4ch;
+       
+        align-self:stretch;
+        overflow: hidden;
         
     }
     .school-dates {
         display: block;
         
         background-color: #fff;
-     padding : 10px 0 10px 0;
-     bottom: 0;
+     padding : 10px 0 ;
+    justify-self: baseline;
     }
     .school-area{
         

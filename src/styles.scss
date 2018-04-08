@@ -49,7 +49,6 @@ table {
 }
 // END reset.css
 
-
 @import "./variables.scss";
 /* Flex styles -------------------------------------------------*/
 header {
@@ -69,16 +68,8 @@ header {
 
 /* Generic styles ----------------------------------------------*/
 body {
-  font-family: $plexMono;
+  font-family: $primaryFont;
   background-color: $bodyBg;
-}
-
-header {
-  padding: 10px;
-  font-size: 2em;
-  color: white;
-  background-color: #333;
-  font-family: $playfair-display;
 }
 
 

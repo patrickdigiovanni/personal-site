@@ -1,20 +1,14 @@
-@import "../app.component.scss";
+@import "../../styles.scss";
+
 /***************** FONTS ********************/
 
-html {
-    font-size: 62.5%;
-    font-family: 'Open Sans', sans-serif;
-}
-
-body {
-    font-size: 1.6rem;
-    min-height: 100vh;
-}
 
 h1 {
+    font-family: $primaryFont;
     font-size: 22px;
     margin-bottom: .5rem;
-    padding-right: 20px;
+    padding: 10px 0 0 10px;
+    
 }
 
 h2 {
@@ -22,32 +16,33 @@ h2 {
 }
 
 header {
-    position: relative;
-    color: $navText;
-    align-self: right;
-    a {
-        text-decoration: none;
-        color: $navText;
-        &:hover {
-            color: darken($color: $navText, $amount: 10)
-        }
-    }
-    p {
-        font-size: .5em;
-        font-family: $raleway;
-        padding-left: 40px;
-    }
-}
+//     position: relative;
+//     color: $navText;
+//     align-self: right;
+//     a {
+//         text-decoration: none;
+//         color: $navText;
+//         &:hover {
+//             color: darken($color: $navText, $amount: 10)
+//         }
+//     }
+//     p {
+//         font-size: .5em;
+//         font-family: $primaryFont;
+//         padding-left: 40px;
+//     }
+// }
 
-main {
-    padding: 2rem;
-    background: rgb(78, 78, 78);
-}
+// main {
+//     padding: 2rem;
+//     background: rgb(78, 78, 78);
+// }
 
 .icons {
     position: absolute;
     right: 20px;
     font-size: 30px;
+}
     i {
         padding: 20px;
     }
@@ -63,5 +58,15 @@ main {
     }
     #initials {
         visibility: visible;
+    }
+}
+a {
+    h1{
+    color : $navText;
+    text-decoration: none;
+    }
+    :hover {
+       
+        color: lighten($navText, 10);
     }
 }

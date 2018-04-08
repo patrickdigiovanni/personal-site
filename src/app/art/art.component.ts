@@ -1,13 +1,40 @@
 import { Component, OnInit } from '@angular/core';
-
+import { LeadingComponent } from "../leading/leading.component";
 @Component({
   selector: 'app-art',
+ 
   templateUrl: './art.component.html',
   styleUrls: ['./art.component.scss']
 })
 export class ArtComponent implements OnInit {
   public pages = {
-
+    'resume' :[
+      {
+        "title": "Skills",
+        "category": "Skills",
+        "description": "",
+        "image": "../../assets/img/skills-preview.jpg",
+        "route": "/skills"
+  
+      },
+      {
+        "title": "Education",
+        "category": "Education",
+        "description": "",
+        "image": "../../assets/img/education-preview.jpg",
+        "route": "/education"
+  
+      },
+      {
+        "title": "Experience",
+        "category": "Skills",
+        "description": "",
+        "image": "../../assets/img/experience-preview.jpg",
+        "route": "/experience"
+  
+      }
+    ]
+    ,
     '2d': [
     {
       "title": "Photography",
@@ -19,7 +46,7 @@ export class ArtComponent implements OnInit {
     },
 
     {
-      "title": "Oscillation Painter Output",
+      "title": "Oscillation Painter",
       "category": "Code",
       "description": "",
       "image": "../../assets/img/osc-painter/thumbs/5.jpg",

@@ -1,9 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { AngularFirestore, AngularFirestoreCollection } from "angularfire2/firestore";
+import { Observable } from "rxjs/Observable";
 import * as  _ from "lodash";
 import { NgxGalleryImage, NgxGalleryOptions, NgxGalleryImageSize } from 'ngx-gallery';
 import { ArtComponent } from "../art/art.component";
-
+import { Gallery } from "../models/gallery";
 
 @Component({
   selector: 'app-gallery',
@@ -25,19 +26,36 @@ export class GalleryComponent implements OnInit {
   
   @Input('description')description : string;
   galleryPath : string = "../../assets/img/"+ this.galleryFolder ;
+  galleriesCollection : AngularFirestoreCollection<Gallery>;
+  galleries : Observable<Gallery[]>;
 
   
 
  
-  constructor() {
+  constructor( private afs: AngularFirestore) {
+
     
   
 
   }
 
   ngOnInit() {
+    this.galleriesCollection = this.afs.collection('galleries');
+    this.galleries = this.galleriesCollection.valueChanges();
+
+    this.galleriesCollection.doc(this.galleryFolder)
+    .ref
+    .get().then(function(doc) {
+      if (doc.exists) {
+          console.log("Document data:", doc.data());
+      } else {
+          console.log("No such document!");
+      }
+  }).catch(function(error) {
+      console.log("Error getting document:", error);
+  });
     
-    
+  
     let numImages = _.range(1, (this.qty + 1));
     let tempArray = [];
     for (let i of numImages) {
