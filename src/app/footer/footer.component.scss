@@ -12,4 +12,9 @@ footer {
             color : darken($color: $navText, $amount: 10);
         }
     }
+    #firebase-icon{
+        height: 15px;
+        object-fit: contain
+    }
+
 }

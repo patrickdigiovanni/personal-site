@@ -41,7 +41,7 @@ import { IfMediaModule } from "ng2-if-media";
 import { TypingAnimationModule } from "angular-typing-animation";
 import { TopnavComponent } from './topnav/topnav.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { AngularSvgIconModule } from "angular-svg-icon";
 
 @NgModule({
   declarations: [
@@ -82,7 +82,8 @@ import { FooterComponent } from './footer/footer.component';
     AngularFireModule.initializeApp(environment.firebase),
     NgbModule.forRoot(),
     RecaptchaModule.forRoot(), 
-    TypingAnimationModule
+    TypingAnimationModule,
+    AngularSvgIconModule
 
 
   ],
