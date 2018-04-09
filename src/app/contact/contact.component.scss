@@ -1,5 +1,17 @@
 @import '../../styles.scss';
 @import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+#contact{
+    color : $navText;
+    h1{
+        padding:15px;
+        font-size: 30px;
+    
+    }
+    p{ padding: 20px;
+        padding-top:0;
+    }
+}
 form {
     
     input {

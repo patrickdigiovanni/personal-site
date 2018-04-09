@@ -1,8 +1,11 @@
 @import "../../styles.scss";
 footer {
+    display: block;
     color : $navText;
     text-align: center;
     font-size: 15px;
+    background-color: darken($color: $navBg, $amount: 20);
+    margin-top: 10px;
     p {
         padding: 5px;
     }
@@ -13,8 +16,10 @@ footer {
         }
     }
     #firebase-icon{
-        height: 15px;
-        object-fit: contain
+        
+        opacity: .5;
+      padding-top:10px;
+       
     }
 
 }
