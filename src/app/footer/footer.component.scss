@@ -1,0 +1,15 @@
+@import "../../styles.scss";
+footer {
+    color : $navText;
+    text-align: center;
+    font-size: 15px;
+    p {
+        padding: 5px;
+    }
+    a{
+        color: $navText;
+        &:hover{
+            color : darken($color: $navText, $amount: 10);
+        }
+    }
+}

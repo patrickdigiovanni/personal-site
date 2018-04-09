@@ -33,36 +33,16 @@ import { SharedModule } from './shared/shared.module';
 import { RecaptchaModule } from 'ng-recaptcha';
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import {AngularFireModule} from "angularfire2";
+import { AngularFireModule } from "angularfire2";
 
 import { environment } from "../environments/environment";
 import { HomeComponent } from './home/home.component';
 import { IfMediaModule } from "ng2-if-media";
-import { TypingAnimationDirective } from "angular-typing-animation";
+import { TypingAnimationModule } from "angular-typing-animation";
 import { TopnavComponent } from './topnav/topnav.component';
+import { FooterComponent } from './footer/footer.component';
 
-const mediaConfig = {
-  breakpoints: {
-    tablet: {
-      value: '768px',
-      param: 'width'
-    },
-    budgetHeight: {
-      value: '480px',
-      param: 'height'
-    },
-    widescreen: {
-      value: '1280px',
-      param: 'width'
-    },
-    print: {
-      media: 'print'
-    },
-    landscape: '(orientation: landscape)'
-  },
-  vendorBreakpoints: ['bootstrap'],  // include 3rd party namespace
-  throttle: 100
-};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,10 +64,10 @@ const mediaConfig = {
     ContactComponent,
     CodeComponent,
     HomeComponent,
-    TypingAnimationDirective,
-    TopnavComponent
-   
-    
+    TopnavComponent,
+    FooterComponent
+
+
   ],
   imports: [
     BrowserModule,
@@ -95,15 +75,16 @@ const mediaConfig = {
     NgxGalleryModule,
     HttpClientModule,
     CollapsibleModule,
-    FormsModule, 
+    FormsModule,
     HttpModule,
-    ReactiveFormsModule, 
+    ReactiveFormsModule,
     SharedModule,
     AngularFireModule.initializeApp(environment.firebase),
     NgbModule.forRoot(),
-    RecaptchaModule.forRoot(),
-    IfMediaModule.withConfig(mediaConfig)
-    
+    RecaptchaModule.forRoot(), 
+    TypingAnimationModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

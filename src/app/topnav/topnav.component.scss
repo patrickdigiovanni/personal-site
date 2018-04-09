@@ -1,0 +1,27 @@
+@import "../../styles.scss";
+nav{
+    background-color: $navBg;
+     button{
+         span{
+         color: $navText;
+         }
+     }
+     li{
+         
+         a{
+             &:hover{
+                color: darken($navText, 20);
+             }
+         }
+         
+     }
+     
+
+}
+.nav-link , button {
+
+    color: $navText;
+}
+.dropdown {
+    color : $navText;
+}

@@ -1,55 +1,56 @@
 @import "../../styles.scss";
 
 /***************** FONTS ********************/
-
-
-h1 {
-    font-family: $primaryFont;
-    font-size: 22px;
-    margin-bottom: .5rem;
-    padding: 10px 0 0 10px;
-    
-}
-
-h2 {
-    font-size: 1.6rem;
-}
-
 header {
-//     position: relative;
-//     color: $navText;
-//     align-self: right;
-//     a {
-//         text-decoration: none;
-//         color: $navText;
-//         &:hover {
-//             color: darken($color: $navText, $amount: 10)
-//         }
-//     }
-//     p {
-//         font-size: .5em;
-//         font-family: $primaryFont;
-//         padding-left: 40px;
-//     }
-// }
+    display: fixed;
+    height: 100px;
+    background-color: $navBg;
+}
 
-// main {
-//     padding: 2rem;
-//     background: rgb(78, 78, 78);
-// }
+#site-id {
+    font-size : 30px;
+    
+    position: absolute;
+    top : 20px;
+    left: 20px;
+    a {
+        text-decoration: none;
+        color : $navText;
 
+        & :hover{
+            color: darken($color: $navText, $amount: 10);
+        }
+    }
+}
+#tagline{
+    display:block;
+    position: absolute;
+    top: 52px;
+    left : 21px;
+    color : darken( $bodyText, 20);
+   
+
+}
 .icons {
     position: absolute;
     right: 20px;
     font-size: 30px;
-}
-    i {
-        padding: 20px;
+    color : $navText;
+    a {
+        color : $navText;
+        & :hover {
+            color : darken($color: $navText, $amount: 10)
+        }
     }
 }
+    i {
+        
+        padding: 20px;
+    }
+
 
 #initials {
-    visibility: hidden;
+    display: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -57,7 +58,11 @@ header {
         display:none;
     }
     #initials {
-        visibility: visible;
+        display : block;
+    }
+    #tagline {
+        font-size: 15px;
+        width:33vw;
     }
 }
 a {

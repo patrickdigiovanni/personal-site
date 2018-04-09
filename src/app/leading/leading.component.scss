@@ -1,17 +1,17 @@
 @import "../../styles.scss";
 .leading {
     display : grid;
-    grid-template-rows: 150px auto;
+    grid-template-rows: 200px auto;
     overflow : hidden;
     z-index: 0 !important;
 }
 #welcome-text{
-    padding-left :  20px;
+    padding: 20px;
     color : $bodyText;
     grid-row:1;
 }
 #core-strengths{
-    grid-rows : 2  3;
+    grid-row-start : 2;
 .strength-name{
     color : $navText;
     font-size : 25px;

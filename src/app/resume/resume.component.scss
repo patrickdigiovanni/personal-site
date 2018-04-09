@@ -9,7 +9,10 @@
   
   .resume-header {
    
-    font-size: 20px;
+    font-size: 30px;
+    color: $bodyText;
+    background-color: darken($bodyBg, 20);
+    padding : 5px;
     
   }
 
