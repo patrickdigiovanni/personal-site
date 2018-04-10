@@ -20,10 +20,10 @@ import {
       state('in', style({transform: 'translateX(0)'})),
       transition('void => *', [
         style({transform: 'translateX(-100%)'}),
-        animate(1000)
+        animate('100 1000')
       ]),
       transition('* => void', [
-        animate(1000, style({transform: 'translateX(100%)'}))
+        animate('100 1000', style({transform: 'translateX(100%)'}))
       ])
     ])
   ]
