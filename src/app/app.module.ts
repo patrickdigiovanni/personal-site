@@ -8,7 +8,7 @@ import { NgxGalleryModule } from "ngx-gallery";
 import { AppRoutingModule } from './app-routing.module';
 import { CollapsibleModule } from "ngx-collapsible";
 
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { LeadingComponent } from './leading/leading.component';
@@ -83,7 +83,8 @@ import { AngularSvgIconModule } from "angular-svg-icon";
     NgbModule.forRoot(),
     RecaptchaModule.forRoot(), 
     TypingAnimationModule,
-    AngularSvgIconModule
+    AngularSvgIconModule,
+    BrowserAnimationsModule
 
 
   ],

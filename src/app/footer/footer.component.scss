@@ -1,16 +1,19 @@
 @import "../../styles.scss";
 footer {
     display: block;
+    position: fixed;
+    width : 100%;
+    bottom: 0;
     color : $navText;
     text-align: center;
-    font-size: 15px;
+    font-size: small;
     background-color: darken($color: $navBg, $amount: 20);
     margin-top: 10px;
     p {
         padding: 5px;
     }
     a{
-        color: $navText;
+        color: lighten($navText, 10);
         &:hover{
             color : darken($color: $navText, $amount: 10);
         }

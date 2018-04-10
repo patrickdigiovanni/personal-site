@@ -1,27 +1,35 @@
 @import "../../styles.scss";
 nav{
+    position: static;
     background-color: $navBg;
-     button{
-         span{
+    .nav-link, button{
+         
          color: $navText;
+         &:hover{
+            color: darken($navText, 20);
          }
      }
      li{
          
-         a{
+         .dropdown-item{
+             color:darken($navText, 40);
              &:hover{
                 color: darken($navText, 20);
              }
          }
          
      }
+    *{ z-index: 2000;
      
-
+    }
 }
-.nav-link , button {
 
-    color: $navText;
-}
+ 
 .dropdown {
     color : $navText;
+}
+@media screen and (min-width : 768) {
+    .navbar-toggler{
+        display:none;
+    }
 }

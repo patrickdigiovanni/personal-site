@@ -3,7 +3,10 @@ ngx-gallery {
     background-color: $bodyBg;
     height : 100%;
     padding-top: 20px;
-
+    .ngx-gallery-image{
+        z-index: 1;
+        overflow: hidden;
+    }
 }
 .gallery {
     display: grid;

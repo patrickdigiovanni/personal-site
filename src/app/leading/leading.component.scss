@@ -1,12 +1,14 @@
 @import "../../styles.scss";
 .leading {
     display : grid;
-    grid-template-rows: 200px auto;
+    grid-template-rows: 220px auto;
     overflow : hidden;
     z-index: 0 !important;
+   
 }
 #welcome-text{
-    padding: 20px;
+    
+    padding: 10px;
     color : $bodyText;
     grid-row:1;
 }
