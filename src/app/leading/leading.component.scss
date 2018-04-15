@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 .leading {
-    display : grid;
-    grid-template-rows: 220px auto;
+    display :flex;
+    flex-direction: column;
     overflow : hidden;
     z-index: 0 !important;
    
@@ -11,12 +11,13 @@
     padding: 10px;
     color : $bodyText;
     grid-row:1;
+   
 }
 #core-strengths{
     grid-row-start : 2;
 .strength-name{
     color : $navText;
-    font-size : 25px;
+    
     background-color: $navBg;
     padding: 10px;
     
@@ -26,3 +27,13 @@
     background-color: $bodyText;
     padding : 10px;
 }}
+@media screen and (max-width : 400px){
+    p{   font-size : calc(.75em + 2vw);
+    }
+}
+@media screen and (max-width : 800px){
+   .leading {
+    grid-template-rows:19vh auto;
+
+   }
+}

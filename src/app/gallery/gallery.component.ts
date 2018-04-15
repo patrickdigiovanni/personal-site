@@ -44,10 +44,10 @@ export class GalleryComponent implements OnInit {
     this.galleriesCollection = this.afs.collection('galleries');
     this.galleries = this.galleriesCollection.valueChanges();
 
-    
 
-   
- 
+
+
+
 
     let numImages = _.range(1, (this.qty + 1));
     let tempArray = [];

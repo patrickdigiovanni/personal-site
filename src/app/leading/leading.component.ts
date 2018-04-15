@@ -7,7 +7,9 @@ import {
   state,
   style,
   animate,
-  transition
+  transition,
+  query,
+  stagger
 } from '@angular/animations'
 
 @Component({
@@ -16,23 +18,33 @@ import {
   providers: [AngularFirestore],
   styleUrls: ['./leading.component.scss'],
   animations: [
-    trigger('flyInOut', [
+    trigger('flyInLeft', [
       state('in', style({transform: 'translateX(0)'})),
       transition('void => *', [
-        style({transform: 'translateX(-100%)'}),
-        animate('100 1000')
+        style({transform: 'translateX(200%)'}),
+        animate(2000)
       ]),
       transition('* => void', [
-        animate('100 1000', style({transform: 'translateX(100%)'}))
+        animate(1000, style({transform: 'translateX(200%)'}))
+      ])]),
+      trigger('flyInRight', [ state('in', style({transform: 'translateX(0)'})),
+      transition('void => *', [
+        style({transform: 'translateX(-200%)'}),
+        animate(2000)
+      ]),
+      transition('* => void', [
+        animate(1000, style({transform: 'translateX(-200%)'}))
       ])
     ])
   ]
+  
 })
 export class LeadingComponent implements OnInit {
-  state: string = 'in';
+  state : string = 'in';
+  
   strengthsCollection: AngularFirestoreCollection<Strength>;
   strengths: Observable<Strength[]>;
-  
+  numStrengths : number ;
 
   constructor(private afs: AngularFirestore) {
    
@@ -44,6 +56,7 @@ export class LeadingComponent implements OnInit {
     
   }
   toggleState(){
-    this.state = (this.state === 'in' ?  'out': 'in');
+    this.state  = (this.state === 'in' ?  'out': 'in');
+   
   }
 }

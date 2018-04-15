@@ -7,5 +7,5 @@ export const environment = {
         storageBucket: "personal-site-226ef.appspot.com",
         messagingSenderId: "1014805690586"
   },
-production:false};
+production: true};
 

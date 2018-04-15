@@ -2,8 +2,10 @@
 nav{
     position: static;
     background-color: $navBg;
+    
+    padding-top: .5em;
     .nav-link, button{
-         
+         padding: .2em;
          color: $navText;
          &:hover{
             color: darken($navText, 20);
@@ -28,8 +30,20 @@ nav{
 .dropdown {
     color : $navText;
 }
-@media screen and (min-width : 768) {
+@media screen and (max-width : 768px) {
+    nav{
+        font-size: 3vh;
+        .nav-link{
+            padding : 5px;
+        }
+    }
+    
+}
+@media screen and (min-width: 769px) {
+    nav{
+        font-size: 2vw;
+    }
     .navbar-toggler{
-        display:none;
+      
     }
 }

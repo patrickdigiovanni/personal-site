@@ -8,9 +8,9 @@
         <br> Here are some of my core strengths:</p>
         </div>
         <div id="core-strengths" >
-       <div *ngFor="let strength of strengths  | async "   ><p class="strength-name"  >{{strength.name}}</p>
+       <div *ngFor="let strength of strengths  | async "   ><h1 class="strength-name" [@flyInLeft]="state" (complete)="toggleState()" >{{strength.name}}</h1>
     
-        <p class="strength-detail" [@flyInOut]="state"  >{{strength.detail}}</p>  
+        <p class="strength-detail" [@flyInRight]="state"  >{{strength.detail}}</p>  
     
     </div>
 </div>   
