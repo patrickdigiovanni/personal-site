@@ -77,7 +77,10 @@ export class GalleryComponent implements OnInit {
         thumbnailSize: NgxGalleryImageSize.Contain,
         imageSwipe: true,
         thumbnailsSwipe: true,
-        previewKeyboardNavigation: true
+        previewKeyboardNavigation: true,
+        imageArrowsAutoHide : true,
+        arrowPrevIcon : 'fa fa-angle-left',
+        arrowNextIcon : 'fa fa-angle-right'
       }
     ];
 
