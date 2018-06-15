@@ -1,44 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway'); 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway|Roboto+Condensed|Anonymous+Pro");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding");
 @import "node_modules/sass-colorscheme/colorscheme";
-$seed-color :#777777;
-$colorscheme: colorscheme($seed: $seed-color, $global: true, $scheme: 'analogic');
-$h1Size: calc(1rem + 1.5vw);
-$h2Size : calc(.7rem + 1vw);
-$pSize : calc(.5rem + 1vw);
+$seed-color: #6b6b6b;
+$colorscheme: colorscheme(
+  $seed: $seed-color,
+  $global: true,
+  $scheme: "tetrad"
+);
+$h1Size: calc(1rem+1.5vw);
+$h2Size: calc(0.6rem+1vw);
+$pSize: calc(0.4rem+1vw);
 $leadingOverlay: linear-gradient(
-    rgba(66, 66, 66, 0.45), 
-    rgba(26, 26, 26, 0.45)
-  );
-$leadingImage: 'assets/img/particle-systems/full/3.jpg';
-
-$raleway: 'Raleway', serif;
-$playfair-display: 'Playfair Display', sans-serif; 
-$plexMono : 'IBM Plex Mono', monospace;
-$nanumGothic : 'Namum Gothic Coding', $plexMono;
-$primaryFont : $nanumGothic;
+  rgba(66, 66, 66, 0.45),
+  rgba(26, 26, 26, 0.45)
+);
+$leadingImage: "assets/img/particle-systems/full/3.jpg";
+$raleway: "Raleway", serif;
+$playfair-display: "Playfair Display", sans-serif;
+$plexMono: "IBM Plex Mono", monospace;
+$nanumGothic: "Namum Gothic Coding", $plexMono;
+$roboto: "Roboto Condensed", sans-serif;
+$primaryFont: $nanumGothic;
 // Color pallette - Purple/Green
-$black1 : #000000;
-$lavender : #7b53ce;
-$violet : #604ad0;
-$kelly : #029334;
-$hunter : #236154;
-$royal : #0b06c5;
-
-
+$black1: #000000;
+$lavender: #7b53ce;
+$violet: #604ad0;
+$kelly: #029334;
+$hunter: #236154;
+$royal: #0b06c5;
 // Color pallette - warm
 // $red: #e74c3c;
 // $yellow: #C9C243;
 // $orange: #FFA644;
-
-$navText: lighten($primary--lightest,10);
-$titleText : $primary--lightest;
-$navBg: $secondary-a--darkest ;
-$bodyBg : darken($primary--darkest, 10);
-$bodyText : $primary--lightest;
-$headerBg : lighten($black1, 10);
-
-$btnText :  #baf73c;
-$btnBg : darken($kelly, 10);
-
+$navText: lighten($secondary-a--lightest, 10);
+$titleText: $primary--lightest;
+$navBg: $secondary-a--darkest;
+$bodyBg: darken($secondary-b--darkest, 10);
+$bodyText: $primary--lightest;
+$headerBg: lighten($black1, 10);
+$btnText: #baf73c;
+$btnBg: darken($kelly, 10);

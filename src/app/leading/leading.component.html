@@ -1,17 +1,18 @@
-
 <section class="leading">
-  <div id="welcome-text">
-  <p typingAnimation [typeSpeed]="20" [startDelay]="1000" [hideCursorOnComplete]="true"  >Hello!  I'm Patrick. I'm a developer, artist, and musician.</p>
+    <div id="welcome-text">
+        <p>Hello! I'm Patrick. I'm a developer, artist, and musician.</p>
 
-     <p typingAnimation [typeSpeed]="20" [startDelay]="4000" [hideCursorOnComplete]="true" >This is a place where you can see some examples of my art and code, and check out my resume. 
-        You can also contact me if you feel so inclined using my convenient contact form.
-        <br> Here are some of my core strengths:</p>
-        </div>
-        <div id="core-strengths" >
-       <div *ngFor="let strength of strengths  | async "   ><h1 class="strength-name" [@flyInLeft]="state" (complete)="toggleState()" >{{strength.name}}</h1>
-    
-        <p class="strength-detail" [@flyInRight]="state"  >{{strength.detail}}</p>  
-    
+        <p>This is a place where you can see
+            <a href="design">some examples of my art and code</a>, and check out
+            <a href="experience">my resume</a>. You can also contact me if you feel so inclined using my convenient
+            <a href="contact">contact form</a>. Here are some of my core strengths:</p>
     </div>
-</div>   
+    <div id="core-strengths">
+        <div *ngFor="let strength of (strengths)  | async ">
+            <h1 class="strength-name">{{strength.name}}</h1>
+
+            <p class="strength-detail">{{strength.detail}}</p>
+
+        </div>
+    </div>
 </section>

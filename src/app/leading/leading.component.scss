@@ -1,39 +1,50 @@
 @import "../../styles.scss";
 .leading {
-    display :flex;
+    display: flex;
     flex-direction: column;
-    overflow : hidden;
+    overflow: hidden;
     z-index: 0 !important;
-   
+    background-image: url("../../assets/img/particle-systems/full/12.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }
-#welcome-text{
-    
+
+#welcome-text {
     padding: 10px;
-    color : $bodyText;
-    grid-row:1;
-   
+    color: invert($bodyText);
+    grid-row: 1;
+    background: invert($bodyBg);
+    opacity: 0.6;
 }
-#core-strengths{
-    grid-row-start : 2;
-.strength-name{
-    color : $navText;
-    
-    background-color: $navBg;
-    padding: 10px;
-    
-}
-.strength-detail {
-    color: $bodyBg;
-    background-color: $bodyText;
-    padding : 10px;
-}}
-@media screen and (max-width : 400px){
-    p{   font-size : calc(.75em + 2vw);
+
+#core-strengths {
+    grid-row-start: 2;
+    .strength-name {
+        color: $navText;
+        background-color: $navBg;
+        opacity: 0.6;
+        padding: 10px;
+        h1 {
+            padding: 5px;
+        }
+    }
+    .strength-detail {
+        color: $bodyBg;
+        background-color: $bodyText;
+        opacity: 0.5;
+        padding: 10px;
+        line-height: 1.25;
     }
 }
-@media screen and (max-width : 800px){
-   .leading {
-    grid-template-rows:19vh auto;
 
-   }
+@media screen and (max-width: 400px) {
+    p {
+        font-size: calc(0.75em + 2vw);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .leading {
+        grid-template-rows: 19vh auto;
+    }
 }

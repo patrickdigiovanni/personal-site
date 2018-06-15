@@ -14,25 +14,31 @@
     }
 }
 form {
-    
+    *{
+        border-radius: 10px;
+        margin-left: 10vw;
+        font-size: .5em;
+    }
     input {
         width: 25vw;
-        margin-left: 10vw;
+       
+        padding : 5px;
     }
     textarea {
         width: 80vw;
         height : 50vh;
-        margin-left: 10vw;
+       
     }
     button{
         display:inline-block;
         background-color: lighten($navBg, 25);
-        padding : 20px;
+        padding : 5px;
         margin-left :40vw;
         margin-top: 7px;
         border-radius : 5px;
         color: darken($color: $secondary-b, $amount: 40);
         border: solid 2px $navText;
+        
         
     }
 }

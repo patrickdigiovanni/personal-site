@@ -11,6 +11,8 @@ import {
   query,
   stagger
 } from '@angular/animations'
+import * as _ from 'lodash';
+
 
 @Component({
   selector: 'app-leading',
@@ -59,4 +61,5 @@ export class LeadingComponent implements OnInit {
     this.state  = (this.state === 'in' ?  'out': 'in');
    
   }
+ 
 }
